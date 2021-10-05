@@ -1,7 +1,6 @@
-
-const netlify = require('@sveltejs/adapter-netlify')
 /** @type {import('@sveltejs/kit').Config} */
 import image from "svelte-image";
+import netlify from '@sveltejs/adapter-netlify';
 
 const config = {
     kit: {
