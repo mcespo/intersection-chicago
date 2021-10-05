@@ -6,7 +6,7 @@
     ];
 </script>
 
-<nav class="sticky top-0 py-1 z-10 bg-gray-200 shadow-md">
+<nav class="sticky top-0 py-1 z-10 bg-gray-100 shadow-md">
     <div class="flex container justify-between items-center">
         <a href="/"
             ><svg class="w-52" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 914 191">

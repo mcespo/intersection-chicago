@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Intersection Chicago</title>
+</svelte:head>
+
 <h1 class="text-4xl">
     Intersection is a Chicago-based nonprofit dedicated to creating change through dialogue
 </h1>
