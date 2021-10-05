@@ -23,5 +23,8 @@
     "svelte-image": "^0.2.9",
     "tailwindcss": "^2.2.16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "stream-json": "^1.7.3"
+  }
 }
