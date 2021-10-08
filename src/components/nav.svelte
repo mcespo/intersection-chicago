@@ -31,11 +31,20 @@
                     <a
                         href={route.href}
                         class="uppercase text-base font-sans"
-                        class:text-blue-300={route.href !== $page.path}
-                        class:text-gray-400={route.href === $page.path}>{route.name}</a
+                        class:link={route.href !== $page.path}
+                        class:current={route.href === $page.path}>{route.name}</a
                     >
                 </li>
             {/each}
         </ul>
     </div>
 </nav>
+
+<style>
+    .current {
+        @apply text-gray-800 cursor-default;
+    }
+    .link {
+        @apply text-blue-600 underline;
+    }
+</style>

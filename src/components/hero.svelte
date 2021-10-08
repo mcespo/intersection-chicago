@@ -2,4 +2,4 @@
     import Image from "svelte-image";
 </script>
 
-<Image src="intersection-hero-image.jpg" />
+<Image wrapperClass="max-w-screen-2xl block mx-auto" src="intersection-hero-image.jpg" />

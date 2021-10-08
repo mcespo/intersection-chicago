@@ -1,9 +1,9 @@
 <script>
-    const submitDonation = () =>  document.querySelector("#pay_now_form_d49f5a8581").submit();
+    const submitDonation = () =>  document.querySelector("#paypal-submit").submit();
 </script>
 <section id="donate">
     <hr />
-    <p class="text-base">
+    <p class="text-base mx-auto mt-6">
         Intersection is a recognized US
         <a
         href="https://apps.irs.gov/app/eos/displayPub78.do;jsessionid=uJBC4YDXFxKOgkhPBscd5Wf2.20?dispatchMethod=displayPub78Info&ein=611795176&country=US&deductibility=all&dispatchMethod=searchCharities&isDescending=false&city=Chicago&ein1=&postDateFrom=&exemptTypeCode=&submitName=Search&sortColumn=ein&totalResults=1&names=intersection&resultsPerPage=25&indexOfFirstRow=0&postDateTo=&state=IL"
@@ -11,77 +11,13 @@
         >
         501c3 non-profit organization
         </a>
-        . Our donations page is maintained by a PNC Bank. Please be aware that
+        . Our donations page is maintained by a PayPal Donations. Please be aware that
         you will be redirected to an external site to ensure a secure
         transaction.
     </p>
-    <div id="cp3a8ccc081b">
-        <form
-        action="https://globalgatewaye4.firstdata.com/pay"
-        id="pay_now_form_d49f5a8581"
-        method="post"
-        >
-        <input
-            type="hidden"
-            aria-hidden="true"
-            name="x_login"
-            value="WSP-INTER-96rdHQB&3A"
-        />
-        <input
-            type="hidden"
-            aria-hidden="true"
-            name="x_show_form"
-            value="PAYMENT_FORM"
-        />
-        <input
-            type="hidden"
-            aria-hidden="true"
-            name="x_fp_sequence"
-            value="14815748911997190821"
-        />
-        <input
-            type="hidden"
-            aria-hidden="true"
-            name="x_fp_hash"
-            value="PNB-1.0-eaf45fd608be819a5100ea23fa2e739e89494fb7"
-        />
-        <input aria-hidden="true" type="hidden" name="x_amount" value="" />
-        <input
-            aria-hidden="true"
-            type="hidden"
-            name="x_currency_code"
-            value="USD"
-        />
-        <input
-            aria-hidden="true"
-            type="hidden"
-            name="x_test_request"
-            value="FALSE"
-        />
-        <input
-            aria-hidden="true"
-            type="hidden"
-            name="x_relay_response"
-            value=""
-        />
-        <input
-            aria-hidden="true"
-            type="hidden"
-            name="donation_prompt"
-            value=""
-        />
-        <input
-            aria-hidden="true"
-            type="hidden"
-            name="button_code"
-            value="Donate to Intersection"
-        />
-        <div>
-            <button on:click={submitDonation}
-            type="button"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >Donate</button>
-        </div>
-        </form>
-    </div>
+    <form id="paypal-submit" action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="4CGP5GMFPMF5C" />
+        <button on:click={submitDonation} type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block mx-auto">Donate to Intersection</button>
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+    </form>
 </section>
